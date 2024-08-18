@@ -1,0 +1,262 @@
+.recipe-form-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  margin-bottom: 5px;
+}
+
+.input-field input,
+.input-field textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.photo-upload-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  text-align: center;
+  color: #888;
+}
+
+.half-width {
+  width: 49%;
+  /* Corrected from '1' */
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.submitted-recipes {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.recipe-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h3 {
+  color: #333;
+  font-size: 24px;
+}
+
+.recipe-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.recipe-card strong {
+  color: #333;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.add-btn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.dynamic-inputs {
+  margin-bottom: 10px;
+}
+
+.dynamic-inputs:last-child {
+  margin-bottom: 0;
+}
+
+.delete-field-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-field-btn:hover {
+  background-color: #c82333;
+}
+
+.add-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  /* Default blue color, override below */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover, override below */
+}
+
+.small-btn {
+  background-color: #f9cb88;
+  /* Specific color for small add buttons */
+  font-size: 12px;
+  /* Smaller font size for text */
+  padding: 5px 8px;
+  /* Smaller padding to reduce overall size */
+}
+
+.small-btn:hover {
+  background-color: #e6b76b;
+  /* Slightly darker shade for hover effect */
+}
+
+.view-recipe-button {
+  display: inline-block;
+  background-color: #cd8343;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  /* Remove underline from links */
+  border-radius: 5px;
+  margin-top: 10px;
+  /* Add space above the button */
+  cursor: pointer;
+  /* Change cursor on hover */
+  margin-right: 3em;
+}
+
+/* Change background color on hover for the link-button */
+.view-recipe-button:hover {
+  background-color: #a5672f;
+  /* Darker shade for hover state */
+}
+
+.input-with-button {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-button input,
+.input-with-button textarea {
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+.plus-btn,
+.minus-btn {
+  padding: 5px 10px;
+  color: white;
+  background-color: #cd8343;
+  /* Plus button */
+  border: none;
+  cursor: pointer;
+
+}
+
+.minus-btn {
+  background-color: #e6b76b
+}
+
+.plus-btn:hover,
+.minus-btn:hover {
+  opacity: 0.8;
+}
+
+
+.minus-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.subRecipe{
+  margin-top: 2em;
+}
+
+.view-submitted-recipes-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cd8343; 
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  text-decoration: none; 
+}
+
+.view-submitted-recipes-button:hover, .view-submitted-recipes-button:focus {
+  background-color: #e6b76b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.view-submitted-recipes-button:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); 
+}

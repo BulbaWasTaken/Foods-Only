@@ -1,0 +1,103 @@
+.section-container {
+  background-color: #ffe58f;
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
+  box-shadow: -5px 5px 0px black;
+  border-radius: 2em;
+  color: whitesmoke;
+}
+
+
+.about-kayla-section-container section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  display: flex;
+}
+
+
+.about-kayla-section-container {
+  display: flex;
+}
+
+
+#about-kayla-profile {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 80vh;
+}
+
+
+.about-kayla-section-pic-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  margin: auto 4rem;
+}
+
+
+.social-text {
+  align-self: center;
+  text-align: center;
+}
+.about-kayla-section-text-container {
+  align-self: center;
+  text-align: center;
+}
+
+
+.about-kayla-section-text-container p {
+  font-weight: 600;
+}
+
+
+.section-text-p1 {
+  text-align: center;
+}
+
+
+.section-text-p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+
+.about-kayla-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+  background-color: beige;
+  color: black;
+  font-weight: 600;
+  width: 40%;
+  border-radius: 0.35em;
+}
+
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+
+.about-kayla-profile-picture {
+  border-radius: 50%;
+}
+
+
+.about-kayla-description {
+  max-width: 50rem;
+}

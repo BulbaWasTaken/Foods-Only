@@ -1,0 +1,26 @@
+.searchPage {
+    align-items: center;
+}
+
+/* Styling for the recipe list inside the sidebar */
+.search-recipe-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-recipe-card {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-recipe-card:hover {
+    transform: translateY(-5px);
+    background-color: #f9cb88;
+    cursor: pointer;
+    /* Optional: You can add a hover effect like a change in color or shadow */
+  }

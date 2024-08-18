@@ -1,0 +1,135 @@
+.user-profile-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  gap: 50px; 
+  padding: 50px;
+  background-color: #fff8dc;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px; 
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px; 
+}
+
+.profile-image-container {
+  text-align: center; 
+  width: 100%;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px; 
+  border-radius: 50%; 
+}
+
+.edit-profile-link {
+  background-color: #ffa500;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.username, .cooking-experience, .bio-container, .food-preferences-container, .allergies-container, .profile-buttons {
+  width: 100%; 
+  text-align: center; 
+}
+
+.bio, .food-preferences, .allergies, .profile-button {
+  background-color: #e8e8e8;
+  border: none;
+  padding: 10px;
+  width: calc(100% - 20px); 
+  max-width: 300px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #666;
+  margin: 5px auto;
+}
+
+.profile-buttons .profile-button {
+  padding: 10px 15px;
+  background-color: #f9cb88;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 10px auto; 
+}
+
+.profile-button:hover {
+  background-color: #f9cb88;
+}
+
+.profile-buttons a, .profile-buttons a:visited, .profile-buttons a:hover, .profile-buttons a:active {
+  text-decoration: none; 
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust columns for responsiveness */
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.user-posts {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-posts img {
+  width: 100%;
+  border-radius: 5px; 
+}
+
+.post-title {
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+} 
+
+.delete-post-button {
+  padding: 5px 10px;
+  background-color: #ff4d4f;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 5px;
+}
+
+.delete-post-button:hover {
+  background-color: #ff7875;
+  transform: translateY(-2px);
+}
+
+.delete-post-button:active {
+  transform: translateY(1px);
+  background-color: #f5222d;
+}
+
+.delete-post-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.5);
+}
+

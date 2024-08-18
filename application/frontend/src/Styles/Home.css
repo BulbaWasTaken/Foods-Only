@@ -1,0 +1,80 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.recipes {
+  flex-basis: 70%; /* Adjust the width of the slideshow as needed */
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+.sidebar {
+  flex-basis: 25%;
+  padding-top: 1em;
+  padding-bottom: 10em;
+  /* More styling as needed */
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  color: #cd8343;
+  /* More styling as needed */
+}
+
+/* Styling for the recipe list inside the sidebar */
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card {
+  text-decoration: none;
+  background-color: #f9cb88;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  background-color: #f9cb88;
+  cursor: pointer;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1200px; 
+  background-color: #fff;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.grid-item {
+  background: white; /* Background color for the grid items */
+  border-radius: 10px; /* Rounded corners for grid items */
+  overflow: hidden; /* Ensures the content fits within the borders */
+}
+
+.grid-image {
+  width: 100%; /* Makes the image fill the grid item container */
+  height: 300px; /* Maintain aspect ratio */
+  display: block; /* Removes extra space below the image */
+}

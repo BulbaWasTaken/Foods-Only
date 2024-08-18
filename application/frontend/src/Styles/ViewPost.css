@@ -1,0 +1,105 @@
+.view-post-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fdfdfd; /* Light background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: "Helvetica", "Arial", sans-serif; /* Use a modern font-family */
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5em;
+  color: #cd8343;
+}
+
+.recipe-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+  text-transform: uppercase; /* Capitalize */
+  letter-spacing: 1px; /* Spacing between letters */
+}
+
+.recipe-description {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  border-left: 4px solid #cd8343; /* Colorful border for accent */
+  padding-left: 15px;
+}
+
+.ingredients-list,
+.directions-list {
+  margin: 1em 0;
+  padding-left: 20px;
+  list-style-type: none; /* Remove default list styling */
+}
+
+.ingredients-list li::before,
+.directions-list li::before {
+  content: "•"; /* Custom bullet */
+  color: #cd8343; /* Bullet color */
+  font-weight: bold; /* Bold bullet */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.recipe-notes {
+  font-style: italic;
+  margin-top: 1em;
+  background: #f4f4f4; /* Lighter background for notes */
+  padding: 10px;
+  border-left: 4px solid #cd8343; /* Same style as description for consistency */
+  color: #333;
+}
+
+.recipe-meta span {
+  display: inline-block;
+  background: #cd8343; /* More noticeable background color */
+  color: #fff; /* White text for better contrast */
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 20px; /* Rounded pill shape */
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .view-post-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .recipe-meta {
+    display: block;
+  }
+
+  .recipe-meta span {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.liked {
+  color: red; /* Color when liked */
+}
+
+.bookmarked {
+  color: gold; /* Color when bookmarked */
+}

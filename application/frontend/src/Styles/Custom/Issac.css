@@ -1,0 +1,47 @@
+.issacBody {
+  padding-top: 10%;
+  background: #e6e4c8;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  font-family: "Courier New", serif;
+  overflow: hidden;
+  padding-bottom: 10%;
+}
+
+.issacContainer {
+  background: whitesmoke;
+  padding: 10%;
+  display: grid;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.issacContainer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.issacContainer h2 {
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-links a {
+  color: black !important;
+}

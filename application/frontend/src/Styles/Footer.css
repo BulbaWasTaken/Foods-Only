@@ -1,0 +1,47 @@
+.footer {
+  background-color: #cd8343; /* Your color here */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Ensure it spans the width of the screen */
+  z-index: 1000; /* Ensure it sits above other content */
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.footer-copy {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,135 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #cd8343; /* Adjust the color to match the shade in your image */
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  overflow: hidden; /* Ensures the image doesn't overflow the border-radius */
+}
+
+.navbar-logo {
+  display: inline-block;
+  background-image: url("/public/logo.png"); /* Update with the path to your image */
+  background-size: contain; /* This will ensure the logo contains within the element */
+  background-repeat: no-repeat;
+  background-position: center; /* This centers the background image within the element */
+  width: 150px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  text-indent: -9999px; /* This hides the text "FOODS ONLY" off-screen */
+  overflow: hidden;
+}
+
+.navbar-search input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 7px;
+}
+
+.navbar-search button, .dropdown-menu button {
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background-color: white;
+  border-radius: 40;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  border-radius: 12px;
+}
+
+.dropdown-menu h1 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.dropdown-menu button {
+  background-color: #04aa6d;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+navbar-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-links .nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  align-self: center;
+  text-align: center;
+}
+
+.nav-link-profile {
+  display: flex;
+  color: white;
+  align-self: center;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-avatar-name {
+  align-self: center;
+  text-align: center;
+}
+
+.navbar-links .nav-link:hover {
+  background-color: #d79d63;
+  border-radius: 5px;
+}
+
+.navbar-account {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+  }
+
+  .navbar-search {
+    margin-top: 10px;
+  }
+}
