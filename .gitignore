@@ -1,0 +1,6 @@
+application/backend/config.env
+application/frontend/website/.env
+*/.env
+node_modules
+*/node_modules
+.vscode
