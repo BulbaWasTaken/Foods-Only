@@ -9,6 +9,7 @@ const profileRoutes = require("./routes/profiles");
 const ImageUploadRouter = require("./routes/uploadImageRoute");
 
 require("dotenv").config();
+console.log("Loaded API Key:", process.env.API_KEY);
 const MAX_AGE = 1000 * 60 * 60 * 3; // 3hrs
 const app = express();
 
