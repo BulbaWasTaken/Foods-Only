@@ -13,7 +13,7 @@ const MAX_AGE = 1000 * 60 * 60 * 3; // 3hrs
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: ["http://localhost:3000", "https://foods-only-website.vercel.app"], credentials: true }));
 
 // setting up connect-mongodb-session store
 const mongoDBstore = new MongoDBStore({
