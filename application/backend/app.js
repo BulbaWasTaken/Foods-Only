@@ -48,7 +48,7 @@ app.use((req, res, next) => {
   const apiKey = authHeader.split(" ")[1];
 
   if (apiKey !== process.env.API_KEY) {
-    return res.status(403).json({ error: "Invalid API key" });
+    return res.status(403).json({ error: "Invalid API key", api_key: process.env.API_KEY });
   }
 
   next();
