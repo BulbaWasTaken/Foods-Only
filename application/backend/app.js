@@ -8,7 +8,7 @@ const recipeRoutes = require("./routes/recipes");
 const profileRoutes = require("./routes/profiles");
 const ImageUploadRouter = require("./routes/uploadImageRoute");
 
-require("dotenv").config({ path: "./config.env" });
+require("dotenv").config();
 const MAX_AGE = 1000 * 60 * 60 * 3; // 3hrs
 const app = express();
 
