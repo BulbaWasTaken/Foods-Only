@@ -29,6 +29,7 @@
     "prettier": "3.2.5"
   },
   "scripts": {
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles",
+    "start": "node server"
   }
 }
