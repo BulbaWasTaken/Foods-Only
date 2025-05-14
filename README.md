@@ -1,6 +1,6 @@
 # CSC648-01-sp24-team06 Repository
 
-\*\*Application URL: foodsonly.app
+\*\*Application URL: https://foods-only-website.vercel.app
 
 |     Student Name      |      Student Email      | GitHub Username |    Student's role    |
 | :-------------------: | :---------------------: | :-------------: | :------------------: |
